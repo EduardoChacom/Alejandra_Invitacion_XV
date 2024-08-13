@@ -1,0 +1,168 @@
+/* style.css */
+
+body {
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  background-color: #f8f1f1;
+  color: #5a5a5a;
+  overflow-x: hidden; /* Evita el desbordamiento horizontal */
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box; /* Incluye el padding en el tamaño total */
+}
+
+.header {
+  position: relative;
+  height: 605px; /* Altura fija para el encabezado */
+  overflow: hidden; /* Para ocultar las partes sobrantes de la imagen */
+}
+
+.header-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50px; /* Ajuste para mantener el texto en la parte superior */
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  text-align: center;
+  width: 100%;
+}
+
+.text-overlay h1 {
+  font-size: 18px; /* Tamaño incrementado */
+  font-family: 'Outfit', sans-serif;
+  font-weight: 200; /* ExtraLight */
+  color: #A66A6A;
+  letter-spacing: 0.25em;
+  margin: 0;
+}
+
+.text-overlay p {
+  font-size: 16px; /* Tamaño incrementado */
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300; /* Light */
+  font-style: italic;
+  color: #622727;
+  margin: 0;
+  margin-bottom: 10px; /* Espaciado entre párrafos */
+}
+
+.quinceanera-box, .notes-box {
+  background-color: #FFF0F0;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.quinceanera h2, .details h2, .date h2, .location h2, .notes h2 {
+  font-size: 18px; /* Tamaño incrementado */
+  font-family: 'Outfit', sans-serif;
+  font-weight: 200; /* ExtraLight */
+  color: #F0BABA;
+  letter-spacing: 0.25em;
+  margin: 0;
+}
+
+.quinceanera p, .details p, .location p, .notes p {
+  font-size: 16px; /* Tamaño incrementado */
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300; /* Light */
+  font-style: italic;
+  color: #622727;
+  margin-bottom: 10px; /* Espaciado entre párrafos */
+}
+
+.quinceanera, .details, .location, .notes {
+  text-align: center;
+  margin-bottom: 40px; /* Aumenta el margen para la sección de location */
+}
+
+.date-image-container {
+  position: relative;
+}
+
+.date-image {
+  width: 100%;
+  height: auto;
+}
+
+.date-text-overlay {
+  position: absolute;
+  top: 70%; /* Subir el texto para que no esté al borde */
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box; /* Incluye el padding en el tamaño total */
+  padding: 0 10px; /* Padding adicional para evitar el desbordamiento */
+}
+
+.date-text-overlay h2, .date-text-overlay p {
+  margin: 0;
+}
+
+.date-text-overlay p {
+  font-size: 16px; /* Tamaño incrementado */
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300; /* Light */
+  font-style: italic;
+  color: #422A2A;
+  margin-bottom: 10px; /* Espaciado entre párrafos */
+}
+
+.map-image, .footer-image {
+  width: 100%;
+  height: auto;
+}
+
+.notes ul {
+  list-style: none;
+  padding: 0;
+}
+
+.notes li {
+  font-size: 16px; /* Tamaño incrementado */
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300; /* Light */
+  font-style: italic;
+  color: #622727;
+  margin-bottom: 10px; /* Espaciado entre párrafos */
+}
+
+@media (max-width: 600px) {
+  .container {
+      padding: 0 10px;
+  }
+  
+  .text-overlay h1 {
+      font-size: 1.5em;
+  }
+
+  .text-overlay p {
+      font-size: 1em;
+  }
+
+  .date-text-overlay h2 {
+      font-size: 1.2em;
+  }
+
+  .date-text-overlay p {
+      font-size: 0.9em;
+  }
+
+  .quinceanera p, .details p, .location p, .notes p {
+      font-size: 0.9em;
+  }
+}
