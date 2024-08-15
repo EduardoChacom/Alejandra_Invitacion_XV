@@ -127,6 +127,11 @@ body {
   height: auto;
 }
 
+.map-image2, .footer-image {
+  width: 100%;
+  height: auto;
+}
+
 .notes ul {
   list-style: none;
   padding: 0;
@@ -189,4 +194,45 @@ button:disabled {
   background-color: #D3D3D3; /* Cambia el color cuando está deshabilitado */
   cursor: not-allowed; /* Cambia el cursor cuando está deshabilitado */
   opacity: 0.6; /* Reduce la opacidad cuando está deshabilitado */
+}
+
+.map-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.map-container img.map-image, .map-container img.map-image2 {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.button-link {
+  position: absolute;
+  display: block;
+}
+
+.button-link img.button-image {
+  width: 50px; /* Tamaño del botón */
+  height: auto;
+  border-radius: 100%
+}
+
+.button-link:hover img.button-image {
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño del botón */
+  opacity: 0.9; /* Reduce ligeramente la opacidad */
+}
+
+.map-container:first-child .button-link {
+  bottom: 25px;
+  right: 25px;
+  opacity: 85%;
+}
+
+.map-container:last-child .button-link {
+  bottom: 25px;
+  left: 25px;
+  opacity: 85%;
 }
